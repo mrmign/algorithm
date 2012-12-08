@@ -1,0 +1,35 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 6, 2012
+ *      Author: arming
+ */
+#include <stdio.h>
+#include "lcs.h"
+#include "QuickSort.h"
+//int a[SIZE+1];
+//int b[SIZE+1];
+int main(int argc, char **argv)
+{
+
+	FILE *fin = fopen("1000.txt", "r");
+	int a[SIZE + 1], b[SIZE + 1];
+
+	int i = 1;
+	while (i<=SIZE)
+	{
+		fscanf(fin,"%d",&a[i]);
+		b[i] = a[i];
+		i++;
+	}
+	quick_sort(b,1,SIZE);
+	/*for(i=0;i<20;i++)
+	{
+		printf("%d  %d\n",a[i],b[i]);
+	}*/
+	return 0;
+}
+
+
+
+

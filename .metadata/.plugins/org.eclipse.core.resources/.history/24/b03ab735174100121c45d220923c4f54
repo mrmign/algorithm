@@ -1,0 +1,41 @@
+/*
+ * lcs_nlogn.c
+ *
+ *  Created on: Dec 8, 2012
+ *      Author: arming
+ */
+#include "lcs_nlogn.h"
+
+int lis_length(int *s)
+{
+	int n = LENGTH;
+	int l = 0;
+	last[0]=0;
+	int i;
+	for(i = 1;i<=n;i++)
+	{
+		int p = 0;
+		int r = l;
+		while(p<=r)
+		{
+			int m = (p+r)/2;
+			if(last[m] < s[i])
+				p = m+1;
+			else
+				r = m -1;
+		}
+		last[p] = s[i];
+		if(p>l)
+			l = p;
+	}
+	return l;
+}
+
+void print_lis(int *a, int len)
+{
+	int i;
+	for (i = 1;i<len;i++)
+	{
+		printf("%d\n",last[i]);
+	}
+}

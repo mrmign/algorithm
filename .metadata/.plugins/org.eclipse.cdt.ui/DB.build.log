@@ -1,0 +1,8 @@
+
+**** Clean-only build of configuration Debug for project DB ****
+
+make clean 
+rm -rf  ./src/BMgr.o ./src/DSMgr.o ./src/main.o  ./data.o  ./src/BMgr.d ./src/DSMgr.d ./src/main.d  ./data.d  DB
+ 
+
+**** Build Finished ****

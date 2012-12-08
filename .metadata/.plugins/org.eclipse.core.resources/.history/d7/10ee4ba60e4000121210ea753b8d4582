@@ -1,0 +1,43 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 6, 2012
+ *      Author: arming
+ */
+
+/*
+ * dir
+ *
+ * |0 |1|
+ * |-1|*|
+ */
+typedef struct st
+{
+	int cnt;
+	int dir;
+} data_t;
+
+
+void lcs_length(int *, int *);
+void print_lcs(int *, int **,int,int);
+
+#define SIZE 1000
+st c[SIZE + 1][SIZE + 1];
+int main(int argc, char **argv) {
+
+
+	return 0;
+}
+
+void lcs_length(int *x, int *y)
+{
+	int i,j;
+	for (i = 0; i < SIZE; ++i) {
+
+	}
+}
+
+void print_lcs(int *a, int **b, int i, int j)
+{
+
+}

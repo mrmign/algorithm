@@ -1,0 +1,42 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 6, 2012
+ *      Author: arming
+ */
+#include <stdio.h>
+#include "lcs.h"
+#include "QuickSort.h"
+#include "lcs_nlogn.h"
+//int a[SIZE+1];
+//int b[SIZE+1];
+//#define SIZE 1000
+int main(int argc, char **argv)
+{
+
+	FILE *fin = fopen("1000.txt", "r");
+	int a[SIZE + 1], b[SIZE + 1];
+
+	int i = 1;
+	while (i<=SIZE)
+	{
+		fscanf(fin,"%d",&a[i]);
+		b[i] = a[i];
+		i++;
+	}
+
+//	int cnt = lis_length(a);
+//	print_lis(last,cnt);
+
+	// sort b
+	quick_sort(b,1,SIZE);
+
+	lcs_length(a,b);
+	print_lcs(b,SIZE,SIZE);
+
+	return 0;
+}
+
+
+
+

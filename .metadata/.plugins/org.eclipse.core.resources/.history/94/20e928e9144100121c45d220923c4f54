@@ -1,0 +1,13 @@
+/*
+ * lcs_nlogn.c
+ *
+ *  Created on: Dec 8, 2012
+ *      Author: arming
+ */
+#include "lcs_nlogn.h"
+
+int lis_length(int *s)
+{
+
+}
+

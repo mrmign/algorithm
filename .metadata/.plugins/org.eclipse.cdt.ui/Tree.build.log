@@ -1,0 +1,96 @@
+
+**** Build of configuration Debug for project Tree ****
+
+make all 
+Building file: ../src/BinaryTree.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BinaryTree.d" -MT"src/BinaryTree.d" -o "src/BinaryTree.o" "../src/BinaryTree.c"
+Finished building: ../src/BinaryTree.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/RBTree.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RBTree.d" -MT"src/RBTree.d" -o "src/RBTree.o" "../src/RBTree.c"
+../src/RBTree.c: In function ‘left_rotate’:
+../src/RBTree.c:13: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:14: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:14: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:15: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:16: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:18: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:18: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:19: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:21: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:22: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:24: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:26: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:27: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c: In function ‘right_rotate’:
+../src/RBTree.c:33: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:34: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:34: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:35: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:36: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:38: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:38: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:39: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:41: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:42: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:44: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:46: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:47: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c: In function ‘rb_insert’:
+../src/RBTree.c:58: error: request for member ‘key’ in something not a structure or union
+../src/RBTree.c:58: error: request for member ‘key’ in something not a structure or union
+../src/RBTree.c:59: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:61: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:64: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:69: error: request for member ‘key’ in something not a structure or union
+../src/RBTree.c:69: error: request for member ‘key’ in something not a structure or union
+../src/RBTree.c:70: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:72: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:74: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:75: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:76: error: request for member ‘color’ in something not a structure or union
+../src/RBTree.c: In function ‘rb_insert_fixup’:
+../src/RBTree.c:83: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:85: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:85: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:87: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:88: error: request for member ‘color’ in something not a structure or union
+../src/RBTree.c:90: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:91: error: request for member ‘color’ in something not a structure or union
+../src/RBTree.c:92: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:94: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:96: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:100: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:101: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:102: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:107: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:108: error: request for member ‘color’ in something not a structure or union
+../src/RBTree.c:110: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:111: error: request for member ‘color’ in something not a structure or union
+../src/RBTree.c:112: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:114: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:116: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:120: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:121: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:122: error: request for member ‘parent’ in something not a structure or union
+../src/RBTree.c:125: error: request for member ‘color’ in something not a structure or union
+../src/RBTree.c: At top level:
+../src/RBTree.c:128: error: conflicting types for ‘rb_delete’
+../src/RBTree.h:32: note: previous declaration of ‘rb_delete’ was here
+../src/RBTree.c: In function ‘rb_delete’:
+../src/RBTree.c:131: error: request for member ‘left’ in something not a structure or union
+../src/RBTree.c:131: error: request for member ‘right’ in something not a structure or union
+../src/RBTree.c:135: error: expected expression before ‘}’ token
+../src/RBTree.c: At top level:
+../src/RBTree.c:137: error: conflicting types for ‘rb_delete_fixup’
+../src/RBTree.h:34: note: previous declaration of ‘rb_delete_fixup’ was here
+make: *** [src/RBTree.o] Error 1
+
+**** Build Finished ****
