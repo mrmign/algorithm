@@ -127,11 +127,11 @@ void rb_insert_fixup(RBTreeNode **root, RBTreeNode **x)
 
 RBTreeNode * rb_delete(RBTreeNode *root, RBTreeNode *z)
 {
-	RBTreeNode *y;
-	if(z->left == NULL || z->right == NULL)
-		y = z;
-	else
-		y =
+//	RBTreeNode *y;
+//	if(z->left == NULL || z->right == NULL)
+//		y = z;
+//	else
+//		y =
 }
 
 RBTreeNode *rb_delete_fixup(RBTreeNode *root, RBTreeNode *z)

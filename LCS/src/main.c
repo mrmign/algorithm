@@ -5,7 +5,7 @@
  *      Author: arming
  */
 #include <stdio.h>
-//#include "lcs.h"
+#include "lcs.h"
 #include "QuickSort.h"
 #include "lcs_nlogn.h"
 //int a[SIZE+1];
@@ -25,14 +25,16 @@ int main(int argc, char **argv)
 		i++;
 	}
 
+	//O(nlgn)
 	int cnt = lis_length(a);
 	print_lis(last,cnt);
 
 	// sort b
-//	quick_sort(b,1,SIZE);
-//
-//	lcs_length(a,b);
-//	print_lcs(b,SIZE,SIZE);
+	quick_sort(b,1,SIZE);
+
+	// O(n^2)
+	lcs_length(a,b);
+	print_lcs(b,SIZE,SIZE);
 
 	return 0;
 }

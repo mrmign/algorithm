@@ -2,6 +2,20 @@
 **** Build of configuration Debug for project LCS ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/lcs_nlogn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lcs_nlogn.d" -MT"src/lcs_nlogn.d" -o "src/lcs_nlogn.o" "../src/lcs_nlogn.c"
+Finished building: ../src/lcs_nlogn.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: LCS
+Invoking: GCC C Linker
+gcc  -o "LCS"  ./src/QuickSort.o ./src/lcs.o ./src/lcs_nlogn.o ./src/main.o ./src/random.o   
+Finished building target: LCS
+ 
 
 **** Build Finished ****

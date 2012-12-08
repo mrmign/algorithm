@@ -2,16 +2,6 @@
 **** Build of configuration Debug for project Tree ****
 
 make all 
-Building file: ../src/BinaryTree.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BinaryTree.d" -MT"src/BinaryTree.d" -o "src/BinaryTree.o" "../src/BinaryTree.c"
-Finished building: ../src/BinaryTree.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
 Building file: ../src/RBTree.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RBTree.d" -MT"src/RBTree.d" -o "src/RBTree.o" "../src/RBTree.c"
@@ -84,11 +74,6 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RBTree.d" -MT"src/RBTre
 ../src/RBTree.c: At top level:
 ../src/RBTree.c:128: error: conflicting types for ‘rb_delete’
 ../src/RBTree.h:32: note: previous declaration of ‘rb_delete’ was here
-../src/RBTree.c: In function ‘rb_delete’:
-../src/RBTree.c:131: error: request for member ‘left’ in something not a structure or union
-../src/RBTree.c:131: error: request for member ‘right’ in something not a structure or union
-../src/RBTree.c:135: error: expected expression before ‘}’ token
-../src/RBTree.c: At top level:
 ../src/RBTree.c:137: error: conflicting types for ‘rb_delete_fixup’
 ../src/RBTree.h:34: note: previous declaration of ‘rb_delete_fixup’ was here
 make: *** [src/RBTree.o] Error 1
