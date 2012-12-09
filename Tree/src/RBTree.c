@@ -7,13 +7,26 @@
 
 #include "RBTree.h"
 #include <malloc.h>
-void left_rotate(RBTreeNode **root, RBTreeNode *x)
+/*
+ * parameters:
+ * is_left: 1 is left_rotate, 0 right_rotate
+ */
+void tree_rotate(RBTreeNode *root, RBTreeNode x, int is_left)
 {
-	RBTreeNode *y;
-	y = x->right;
-	x->right = y->left;
-	if (y->left)
-		y->left->parent = x;
+	RBTreeNode y;
+	y = (is_left) ? x->right : x->left;
+	if (is_left)
+	{
+		x->right = y->left;
+		if (y->left)
+			y->left->parent = x;
+	}
+	else
+	{
+		x->left = y->right;
+		if (y->right)
+			y->right->parent = x;
+	}
 
 	y->parent = x->parent;
 	if (!x->parent)
@@ -23,30 +36,35 @@ void left_rotate(RBTreeNode **root, RBTreeNode *x)
 	else
 		x->parent->right = y;
 
-	y->left = x;
-	x->parent = y;
-}
-
-void right_rotate(RBTreeNode **root, RBTreeNode *x)
-{
-	RBTreeNode *y;
-	y = x->left;
-	x->left = y->right;
-	if (y->right)
-		y->right->parent = x;
-
-	y->parent = x->parent;
-	if (!x->parent)
-		*root = y;
-	else if (x == x->parent->right)
-		x->parent->right = y;
+	if (is_left)
+		y->left = x;
 	else
-		x->parent->left = y;
-
-	y->right = x;
+		y->right = x;
 	x->parent = y;
-
 }
+
+/*
+ void right_rotate(RBTreeNode **root, RBTreeNode *x)
+ {
+ RBTreeNode *y;
+ y = x->left;
+ x->left = y->right;
+ if (y->right)
+ y->right->parent = x;
+
+ y->parent = x->parent;
+ if (!x->parent)
+ *root = y;
+ else if (x == x->parent->right)
+ x->parent->right = y;
+ else
+ x->parent->left = y;
+
+ y->right = x;
+ x->parent = y;
+
+ }
+ */
 
 void rb_insert(RBTreeNode **root, RBTreeNode *z)
 {

@@ -67,7 +67,7 @@ TreeNode tree_successor(TreeNode node)
 
 }
 
-void tree_insert(TNode **root, TreeNode z)
+void tree_insert(TreeNode *root, TreeNode z)
 {
 	TreeNode x, y;
 	y = NULL;

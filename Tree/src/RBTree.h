@@ -8,7 +8,6 @@
 #ifndef RBTREE_H_
 #define RBTREE_H_
 
-
 typedef struct RBtnode
 {
 	int key;
@@ -16,21 +15,30 @@ typedef struct RBtnode
 	struct RBtnode *parent;
 	struct RBtnode *left;
 	struct RBtnode *right;
-}*RBTreeNode, RBTNode;
+}*RBTreeNode, RBNode;
 
 #define  RED 'R'
 #define  BLACK 'B'
 
-void left_rotate(RBTreeNode **root, RBTreeNode *x);
+/*create new node*/
+RBTreeNode rb_new_node();
 
-void right_rotate(RBTreeNode **root, RBTreeNode *x);
 
-void rb_insert(RBTreeNode **root, RBTreeNode *z);
+/* Rotates a node around the given root. */
+void tree_rotate(RBTreeNode *root, RBTreeNode node, int is_left);
 
-void rb_insert_fixup(RBTreeNode **root, RBTreeNode **z);
+/*
+ void left_rotate(RBTreeNode **root, RBTreeNode *x);
 
-RBTreeNode rb_delete(RBTreeNode **root, RBTreeNode *z);
+ void right_rotate(RBTreeNode **root, RBTreeNode *x);
+ */
 
-void rb_delete_fixup(RBTreeNode **root, RBTreeNode *z);
+void rb_insert(RBTreeNode *root, RBTreeNode z);
+
+void rb_insert_fixup(RBTreeNode *root, RBTreeNode z);
+
+RBTreeNode rb_delete(RBTreeNode *root, RBTreeNode z);
+
+void rb_delete_fixup(RBTreeNode *root, RBTreeNode z);
 
 #endif /* RBTREE_H_ */

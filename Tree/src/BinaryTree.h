@@ -30,7 +30,7 @@ TreeNode tree_search(TreeNode, int);
 TreeNode tree_successor(TreeNode);
 
 // insert node
-void tree_insert(TNode **, TreeNode);
+void tree_insert(TreeNode *, TreeNode);
 
 // delete node from tree
 TreeNode tree_delete(TreeNode, TreeNode);
